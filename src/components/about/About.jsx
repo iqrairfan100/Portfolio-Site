@@ -21,20 +21,15 @@ const About = () => {
 
 
       <div className='about_content'>
-        <div className='about_card'>
+  <div className='about_card'>
+    <p className="about-text">
+      Thanks for asking! I'm Iqra, a full stack software developer and recent graduate from the University of California, Los Angeles, where I received a Bachelor of Science degree with the highest departmental honors for my major! 
+      I have experience in both web and IOS app design/development on a commercial and large scale. I am available for freelance opportunities and I am also currently looking for a full-time position as a full stack software developer! Feel free to contact me below.
+    </p>
+    <a href="#contact" className='btn btn-primary'>Let's Chat!</a>
+  </div>
+</div>
 
-        <p>
-        Thanks for asking! I'm Iqra, a full stack software developer and recent graduate from the University of California, Los Angeles, where I received a Bachelor of Science degree with the highest departmental honors for my major! 
-        &nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;	&nbsp;	&nbsp;	&nbsp;&nbsp; &nbsp; &nbsp;	&nbsp;	&nbsp;	&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;&nbsp;	&nbsp;	&nbsp;&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;&nbsp;&nbsp;	&nbsp;	&nbsp;&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;
-
-        I have experience in both web and IOS app design/development on a commercial and large scale. I am avaliable for freelance opportunities and I am also currently looking for a full-time position as a full stack software developer! Feel free to contact me below.
-       &nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;&nbsp;	&nbsp;&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;&nbsp;&nbsp;	&nbsp;	&nbsp;&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;	&nbsp;
-        
-        In my free time, I work on my nonprofit organization, Purses for a Purpose - Los Angeles (PFPLA), which focuses on giving back to the unhoused female community in Los Angeles, CA. Learn more and donate at pursesforapurposela.com!
-        </p>
-        <a href="#contact" className='btn btn-primary'>Let's Chat!</a>
-         </div>
-        </div>
       </div>
       <h1 className='text-trans' > ..........  </h1>
       <h1 className='text-trans'> ..........  </h1>
