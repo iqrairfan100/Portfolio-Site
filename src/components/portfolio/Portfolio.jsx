@@ -31,15 +31,7 @@ const Portfolio = () => {
               <a href="https://github.com/iqrairfan100/ShareBear" className='btn btn-primary' h1 style={{color:'black'}}> Github Source Code</a>
             </center>
           </article>
-          <article className='portfolio_item'>
-            <center>
-              <div className= "portfolio_item-image2">
-                <img src={IMG3} className="IMG3" alt="" />
-              </div>
-              <h3 className='text-new'h1 style={{color:'white'}}> Project 3: Mock Music Player Mobile App </h3>
-              <a href="https://github.com/iqrairfan100/MusicPlayer" className='btn btn-primary' h1 style={{color:'black'}}> Github Source Code</a>
-            </center>
-          </article>
+   
         </div>
       <h1 className='text-trans' > ..........  </h1>
       <h1 className='text-trans'> ..........  </h1>

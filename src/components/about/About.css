@@ -12,7 +12,16 @@
     place-items: center;
     
 }
+.about_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
 
+.about_card .btn {
+    margin-top: 20px;
+}
 .about_me-image {
     border-radius: 1rem;
     height: 25rem;
@@ -40,8 +49,8 @@
     margin: 3rem 0 2.6rem;
     color: var(--color-text);
     background:var(--color-white);
-    width: 45rem;
-    height: 18rem;
+    width: 50rem;
+    height: 21rem;
     margin-top: 3rem;
     overflow: hidden;
     padding: 1.5rem 1.5rem 1.5rem 1.5rem;
@@ -51,7 +60,6 @@
     display: block;
     position: relative;
 }
-
 
 /* Media Queries medium devices */ 
 @media screen and (max-width: 1024px) {

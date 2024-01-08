@@ -1,7 +1,7 @@
 .container.contact_container {
-    width: 50%;
+    width: 10%;
     justify-content: center;
-
+    padding-bottom: 10px;
 }
 
 
@@ -21,8 +21,10 @@
 }
 
 .contact_option:hover {
-    background: var(--color-primary-variant);
-    border-color: rgba(236, 126, 141, 0.397);
+    border-color: transparent;
+    cursor: default;
+    background: rgba(247, 228, 240, 0.771);   
+
 
 }
 

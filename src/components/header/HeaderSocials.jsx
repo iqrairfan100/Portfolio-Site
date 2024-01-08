@@ -7,7 +7,6 @@ const HeaderSocials = () => {
     <div className='header_socials'>
       <a href="https://www.linkedin.com/in/iqra-irfan-005925166/" target="_blank"><BsLinkedin/></a>
       <a href="https://github.com/iqrairfan100" target="_blank"><BsGithub/></a>
-      <a href="https://www.pursesforapurposela.com/" target="_blank"><CgWebsite/></a>
     </div>
   )
 }

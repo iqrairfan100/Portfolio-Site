@@ -19,6 +19,7 @@ header{
     gap: 1.2rem;
     justify-content: center;
     
+    
 }
 
 /* socials */
@@ -28,37 +29,38 @@ header{
     align-items: center;
     gap: 0.8rem;
     position: absolute;
-    left: 0;
-    bottom: 10rem;
-
+    left: 1.3rem;
+    bottom: 2rem;
+    font-size: 25px;
+    --color-primary: rgba(249, 243, 246, 0.99);
 }
-.header_socials::after {
-    content: '';
-    width: 1px;
-    height: 2rem;
-    background: var(--color-white);
+.header_socials a:hover {
+    color: rgba(187, 30, 56, 0.692);
 }
-
 /* image adjusting in ME */
 
-.me {
-    background: linear-gradient(var(--color-header), rgba(244, 198, 225, 0.096));
-    width: 23rem;
-    height:  35rem;
-    left: 0rem;
-    margin-top: 3rem;
-    border-radius: 12rem 12rem 0 0;
-    overflow: hidden;
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    text-align: center;
-    position: relative;
-}
 
-img {
-    height: 20rem;
+
+.flower-container {
+    position: absolute;
+    top: 48%;
+    left: 49%;
+    bottom: 20%;
+    transform: translate(-50%, -50%);
+
+  
+  }
+  
+  .flower-image {
+    width: 670px; 
+  }
+  .me-image {
+    width: 360px;
+    position: absolute;
+    z-index: 2;
+    top: 345px;
+    left: -8px;
+    transform: translate(-50%, -50%);
 }
 
 /*scroll down link position */
@@ -69,7 +71,12 @@ img {
     bottom: 5rem;
     transform: rotate(90deg);
     font-weight: 300;
-    font-size: 0.9rem;
+    font-size: 22px;
+    --color-primary: rgba(249, 243, 246, 0.99);
+
+}
+.scroll_down:hover {
+   color: rgba(187, 30, 56, 0.692);
 }
 
 /* media queries for medium devies */
