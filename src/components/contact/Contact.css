@@ -1,5 +1,5 @@
 .container.contact_container {
-    width: 10%;
+    width: 15%;
     justify-content: center;
     padding-bottom: 10px;
 }
@@ -66,7 +66,7 @@ input, textarea{
     background: transparent;
     border: 2px solid var(--color-white);
     resize: none;
-    color: #000000; 
+    background:  rgba(248, 241, 241);
 }
 
 /*media queries medium */

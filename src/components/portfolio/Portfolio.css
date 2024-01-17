@@ -100,20 +100,118 @@
     margin-bottom: 1rem;
     width: 50rem;
 }
+.video-1{
+    position: relative;
+    overflow: hidden;
+    width: 320px;
+    height: 700px;
+    border-radius: 37px;
+    margin-left: 20px;
+  }
 
+  .video-2{
+    position: relative;
+    overflow: hidden;
+    width: 325px;
+    height: 700px;
+    border-radius: 37px;
+    margin-left: 20px;
+
+  }
+  .text-block-1 {
+    line-height: 2.5;
+
+    
+  }
+
+.text-block-1 p{
+    margin: 3rem 0 2.6rem;
+    background:  rgba(248, 241, 241);
+    width: 47rem;    
+    height: 27rem;
+    margin-top: 3rem;
+    overflow: hidden;
+    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+    border-radius: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    position: relative;
+    margin-left: 20px;
+}
+  .content-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 150px;
+    
+  }
+
+ 
+  .video-description {
+    color: #000; /* Set text color */
+    margin: 0;
+  }
+
+  .text-new {
+    color: black;
+    font-weight: bolder;
+    text-decoration: underline;
+
+
+  }
+
+
+ 
 /* Media Queries for Medium Devices */
 
-@media screen and (max-width:1024px){
-    .portfolio_container{
-        grid-template-columns: 1fr 1fr;
-        gap: 1.2rem;
+@media screen and (max-width: 1024px) {
+    .portfolio_container {
+      grid-template-columns: 1fr 1fr;
+      gap: 1.2rem;
     }
-}
-
-/* Media Queries for Small Devices */
-@media screen and (max-width: 600px) {
-    .portfolio_container{
-        grid-template-columns: 1fr;
-        gap: 1rem;
+  
+    .content-wrapper {
+      flex-direction: column; /* Change direction to column */
+      align-items: center; /* Center items */
     }
-}
+  
+    .video-1,
+    .video-2 {
+      width: 100%; /* Make videos take full width */
+      height: auto; /* Auto-adjust height */
+      margin-left: 0; /* Reset left margin */
+    }
+  
+    .text-block-1 {
+      width: 100%; /* Make text block take full width */
+      margin-left: 0; /* Reset left margin */
+    }
+  
+    .text-block-1 p {
+      width: 100%; /* Make paragraph take full width */
+      margin-left: 0; /* Reset left margin */
+    }
+    .btn btn-primary{
+        padding: 200px;
+    }
+  }
+  
+  /* Media Queries for Small Devices */
+  @media screen and (max-width: 600px) {
+    .portfolio_container {
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+  
+    .content-wrapper {
+      margin-top: 20px; /* Adjust spacing */
+    }
+  
+    .video-1,
+    .video-2,
+    .text-block-1 {
+      width: 100%; /* Make both video and text take full width */
+      margin-left: 0; /* Reset left margin */
+    }
+  }
