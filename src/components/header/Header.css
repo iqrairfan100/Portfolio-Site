@@ -1,6 +1,6 @@
 header{
     height: 100vh;
-    padding-top: 7rem;
+    padding-top: 4rem;
     overflow: hidden;
 }
 
@@ -13,22 +13,23 @@ header{
 
 .me {
     position: absolute;
-    left: 50%; /* Use left instead of right */
-    top: 70%;
-    transform: translate(-50%, -50%); /* Center the div */
-    height: 17vw; /* Adjust height based on your design */
-    max-height: 100vh;
-    max-width: 100%;
+    left: 50%;
+    top: 65%;
+    transform: translate(-50%, -50%); 
+    height: 12vw;
+ 
 }
 /* CTA BUTTON */
 .cta{
-    margin-top: 2.5rem;
+    margin-top: 1.6rem;
     display: flex;
     gap: 1.2rem;
     justify-content: center;
     
     
 }
+
+
 
 /* socials */
 .header_socials {
@@ -49,7 +50,6 @@ header{
 
 }
 .header_socials a:hover {
-
     color: rgba(187, 30, 56, 0.692);
 
 }
