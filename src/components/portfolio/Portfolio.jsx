@@ -12,14 +12,14 @@ const Portfolio = () => {
   return (
     <section id='portfolio'>
       <center>
+       
         <h3> My Recent Work</h3>
         <h2 className='text-light'> Portfolio</h2>
-
+      
         <div className='container portfolio_container'>
           <article className='portfolio_item'>
             <center>
            
-          
               <div className='content-wrapper'>
 
                 <div className='video-1'>
@@ -75,9 +75,6 @@ This project not only highlights my expertise in app development and UI/UX desig
                   Created to address the needs of UCLA students, ShareBear provides a streamlined platform for trading and borrowing items effortlessly. As a former UCLA student who lived in the dorms, I often found myself in situations where I needed an item temporarily but lacked the funds to purchase it. Many students resorted to using group chats for listing items, resulting in disorganization and lost information within the text stream. ShareBear emerged as a solution to this challenge.
 
 Developed using Swift, ShareBear is optimized for IOS, leveraging Firebase for database management and login functionalities. The application's design, crafted in Figma, allowed me to infuse my personality through carefully chosen colors and a distinctive logo. ShareBear showcases my proficiency in addressing day-to-day problems, UI/UX design, and overall app development.                 </p>
-
-              
-                
                  <a
                 href='https://gitfront.io/r/iqrairfan100/YG6wq25wkfpo/ShareBear/'
                 className='btn btn-primary'

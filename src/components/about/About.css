@@ -73,7 +73,20 @@
     }
     .about_content p{
         margin: 1rem 0 1.5rem;
+        width: 53rem;
+        height: 38rem;
+        margin-top: 3rem;
+        overflow: hidden;
+        padding: 1.5rem 1.5rem 1.5rem 1.5rem;
+        border-radius: 2rem;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        position: relative;
+        font-size: 23px;
     }
+    
+   
 }
 /* Media Queries small devices */
 @media screen and (max-width: 600px) {

@@ -20,7 +20,7 @@ const About = () => {
       Thanks for asking! I'm Iqra, a full stack software developer and recent graduate from the University of California, Los Angeles (UCLA), where I received a Bachelor of Science degree with the highest departmental honors for my major! I am a current Computer Science student, and I am starting my Masters in the Fall of 2024. I have a deep interest in Machine Learning and improving the safety and efficiency of my community. 
       I have 3 years of experience in both web and app design/development on a commercial and large scale. I am available for freelance opportunities and I am also currently looking for a full-time position as a full stack software developer! Feel free to contact me below.
     </p>
-    <a href="#contact" className='btn btn-primary'>Let's Chat!</a>
+    <a href="#contact" className='btn btn-primary'>Contact Me!</a>
   </div>
 
 

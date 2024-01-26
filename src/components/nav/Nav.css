@@ -1,6 +1,5 @@
 nav{
     background: rgba(247, 228, 240, 0.771);
-
     width: max-content;
     display: block;
     padding: 0.7rem 1.8rem;
@@ -22,7 +21,7 @@ nav a {
     border-radius: 50%;
     display: flex;
     color: rgba(151, 28, 75, 0.689);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
 nav a:hover {
@@ -33,3 +32,35 @@ nav a.active {
     background: var(--color-bg);
     color: var(--color-white);
 }
+
+@media screen and (max-width: 1024px) {
+
+    nav{
+        background: rgba(247, 228, 240, 0.771);
+        width: max-content;
+        display: block;
+        padding: 2rem 3rem;
+        z-index: 2;
+        position: fixed;
+        left: 50%;
+        transform: translatex(-50%);
+        bottom: 2rem;
+        display: flex;
+        gap: 0.8rem;
+        border-radius: 3rem;
+        backdrop-filter: blur(15px);
+      
+    }
+
+    nav a {
+        background: transparent;
+        padding: 0.9rem;
+        border-radius: 50%;
+        display: flex;
+        color: rgba(151, 28, 75, 0.689);
+        font-size: 2rem;
+    }
+   
+  
+  }
+  

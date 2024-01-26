@@ -5,7 +5,6 @@
     margin-right: auto;
     display: block;
     text-align: center;
-    padding-top: 2rem;
 }
 .portfolio_items {
     background: var(--color-primary-variant);
@@ -18,76 +17,6 @@
     border-color: var(--color-primary-variant);
     background: transparent;
 }
-
-.portfolio_item-image {
-    overflow: hidden;
-    position: relative;
-    border-radius: 1.5rem;
-    width:30rem;
-    top: 1rem;
-
-   
-}
-
-.portfolio_item-image img {
-    object-fit: cover; /* or 'contain' or 'none' depending on your needs */
-    width: 90%;
-    height: 90%;
-    border-radius: 1.5rem;
-  }
-
-.portfolio_item-image2{
-    overflow: hidden;
-    position: auto;
-    border-radius: 1.5rem;
-    width: 20rem;
-    height: 35rem;
-}
-.portfolio_item-image2 img {
-    object-fit: cover; /* or 'contain' or 'none' depending on your needs */
-    width: 90%;
-    height: 90%;
-    border-radius: 1.5rem;
-  }
-
-.portfolio_item-image1{
-    overflow: hidden;
-    position: auto;
-    border-radius: 1.5rem;
-    width:20rem;
-    height: 20rem;
-}
-
-.portfolio_item-image4{
-    overflow: hidden;
-    position: auto;
-    border-radius: 1.5rem;
-    width:22rem;
-    height: 18rem;
-}
-.portfolio_item-image4 img {
-    object-fit: cover; /* or 'contain' or 'none' depending on your needs */
-    width: 75%;
-    height: 75%;
-    border-radius: 1.5rem;
-  }
-.IMG3{
-    width: 20rem;
-    height: 37rem;
-    top: 1rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    position: relative;
-}
-
-.IMG{
-    width: 30rem;
-    height: 20rem;
-    border-radius: 2rem;
-    overflow: hidden;
-    position: relative;
-}
-
 
 .portfolio_item h3{
     margin: 1.2rem 0 2rem;
@@ -107,6 +36,7 @@
     height: 700px;
     border-radius: 37px;
     margin-left: 20px;
+
   }
 
   .video-2{
@@ -116,8 +46,10 @@
     height: 700px;
     border-radius: 37px;
     margin-left: 20px;
+    margin-top: 50px;
 
   }
+
   .text-block-1 {
     line-height: 2.5;
 
@@ -143,7 +75,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-top: 150px;
+    margin-top: 30px;
     
   }
 
@@ -181,6 +113,7 @@
       width: 100%; /* Make videos take full width */
       height: auto; /* Auto-adjust height */
       margin-left: 0; /* Reset left margin */
+      
     }
   
     .text-block-1 {
@@ -191,10 +124,9 @@
     .text-block-1 p {
       width: 100%; /* Make paragraph take full width */
       margin-left: 0; /* Reset left margin */
+
     }
-    .btn btn-primary{
-        padding: 200px;
-    }
+  
   }
   
   /* Media Queries for Small Devices */

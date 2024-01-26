@@ -16,7 +16,7 @@
     padding: 2.4rem 5rem;
     border-radius: 4rem;
     border: 1px solid transparent;  
-    width: 37%;
+    width: 48%;
     right: 50%;
      
 }
@@ -43,6 +43,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 2rem;
+    column-gap: 3rem;
     
     
     
@@ -64,11 +65,11 @@
 @media screen and (max-width: 1024px) {
     .experience_container{
         grid-template-columns: 1fr;
-
+     
     }
 
     .experience_container > div {
-        width: 80%;
+        width: 100%;
         padding: 2rem;
         margin: 0 auto;
     }
