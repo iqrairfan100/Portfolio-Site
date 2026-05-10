@@ -24,7 +24,7 @@ const Footer = () => {
         </div>
 
         <div className="footer_copyright">
-          <small> &copy; Iqra Irfan Portfolio Site. All rights reserved </small>
+          <small> &copy; Iqra Irfan Portfolio Site. All rights reserved. Coded in busy Los Angeles, powered by ReactJS</small>
         </div>
       </footer>
   )

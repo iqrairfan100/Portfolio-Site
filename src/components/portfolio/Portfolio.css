@@ -1,149 +1,229 @@
+/* ========== SECTION BASE ========== */
+#portfolio {
+  position: relative;
+  padding: 6rem 0;
+  background: none;
+  overflow: hidden;
+}
+
+/* ========== HEADER ========== */
+.portfolio-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.portfolio-header h3 {
+  color: #e6ecff;
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 1.1rem;
+}
+
+.portfolio-header h3::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  margin: 0.8rem auto;
+  background: linear-gradient(90deg, #5da8c5, #b1ade2);
+  border-radius: 3px;
+}
+
+.portfolio-header h2 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin-top: 0.5rem;
+  letter-spacing: 0.5px;
+}
+
+/* ===== Portfolio Bio / Intro Text ===== */
+.portfolio_intro {
+  max-width: 750px;
+  margin: 1rem auto;
+  color: #ffffff;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* ========== CONTAINER ========== */
 .portfolio_container {
-    position: relative;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 0 2rem;
 }
-.portfolio_items {
-    background: var(--color-primary-variant);
-    border-radius: 2rem;
-    transition: var(--transition);
-    
 
+/* ========== ITEM CARD ========== */
+.portfolio_item {
+  background: transparent;
+  border: none;
+  padding: 2.5rem;
+  max-width: 1100px;
+  width: 100%;
+  transition: all 0.3s ease;
 }
+
 .portfolio_item:hover {
-    border-color: var(--color-primary-variant);
-    background: transparent;
+  transform: translateY(-2px);
 }
 
-.portfolio_item h3{
-    margin: 1.2rem 0 2rem;
-    
+/* ========== CONTENT LAYOUT ========== */
+.content-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.portfolio_item-cta{
-    display: flex;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    width: 50rem;
+/* Media content */
+.video,
+.portfolio-image {
+  width: 420px;
+  height: auto;
+  border-radius: 1.2rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
 }
-.video-1{
-    position: relative;
-    overflow: hidden;
-    width: 320px;
-    height: 700px;
-    border-radius: 37px;
-    margin-left: 20px;
 
-  }
-
-  .video-2{
-    position: relative;
-    overflow: hidden;
-    width: 325px;
-    height: 700px;
-    border-radius: 37px;
-    margin-left: 20px;
-    margin-top: 50px;
-
-  }
-
-  .text-block-1 {
-    line-height: 2.5;
-
-    
-  }
-
-.text-block-1 p{
-    margin: 3rem 0 2.6rem;
-    background:  rgba(248, 241, 241);
-    width: 47rem;    
-    height: 27rem;
-    margin-top: 3rem;
-    overflow: hidden;
-    padding: 1.5rem 1.5rem 1.5rem 1.5rem;
-    border-radius: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    position: relative;
-    margin-left: 20px;
+/* ========== TEXT BLOCK ========== */
+.text-block {
+  flex: 1;
+  min-width: 380px;
+  max-width: 600px;
+  text-align: left;
 }
-  .content-wrapper {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 30px;
-    
-  }
 
- 
-  .video-description {
-    color: #000; /* Set text color */
-    margin: 0;
-  }
+.project-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
 
-  .text-new {
-    color: black;
-    font-weight: bolder;
-    text-decoration: underline;
+/* ========== PARAGRAPH CARD ========== */
+.text-block p {
+  line-height: 1.8;
+  background: rgba(245, 248, 255, 0.85);
+  backdrop-filter: blur(16px) saturate(150%);
+  border-radius: 1.2rem;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 1.4rem 1.6rem;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  color: #0f0f0f;
+  box-shadow: 0 8px 25px rgba(79, 135, 182, 0.12);
+  transition: all 0.3s ease;
+}
 
+.text-block p:hover {
+  background: rgba(250, 252, 255, 0.92);
+  box-shadow: 0 10px 30px rgba(79, 135, 182, 0.18);
+  transform: translateY(-2px);
+}
 
-  }
+/* ========== BUTTONS (renamed to avoid index.css conflicts) ========== */
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
 
+/* Primary Gradient Button */
+.pf-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #5da8c5 0%, #9ea9e2 100%);
+  color: #ffffff; /* ✅ white text */
+  padding: 0.9rem 1.9rem;
+  border-radius: 10px;
+  font-weight: 600;
+  border: none;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(111, 167, 208, 0.35),
+              inset 0 0 5px rgba(255, 255, 255, 0.25);
+}
 
- 
-/* Media Queries for Medium Devices */
+.pf-btn:hover {
+  background: linear-gradient(135deg, #4f87b6 0%, #b1ade2 100%);
+  transform: translateY(-3px);
+  box-shadow: 0 0 18px rgba(111, 167, 208, 0.55),
+              inset 0 0 6px rgba(255, 255, 255, 0.35);
+  color: #ffffff; /* ✅ stays white on hover */
+}
 
+/* Secondary Frosted Button */
+.pf-btn-secondary {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.7);
+  color: #0a0a0a;
+  border: 1px solid rgba(150, 180, 230, 0.5);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  padding: 0.9rem 1.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.3px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 10px rgba(79, 135, 182, 0.15);
+}
+
+.pf-btn-secondary:hover {
+  background: rgba(250, 252, 255, 0.9);
+  border-color: rgba(120, 160, 220, 0.6);
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 0 16px rgba(125, 170, 230, 0.25);
+}
+
+/* ========== RESPONSIVE DESIGN ========== */
 @media screen and (max-width: 1024px) {
-    .portfolio_container {
-      grid-template-columns: 1fr 1fr;
-      gap: 1.2rem;
-    }
-  
-    .content-wrapper {
-      flex-direction: column; /* Change direction to column */
-      align-items: center; /* Center items */
-    }
-  
-    .video-1,
-    .video-2 {
-      width: 100%; /* Make videos take full width */
-      height: auto; /* Auto-adjust height */
-      margin-left: 0; /* Reset left margin */
-      
-    }
-  
-    .text-block-1 {
-      width: 100%; /* Make text block take full width */
-      margin-left: 0; /* Reset left margin */
-    }
-  
-    .text-block-1 p {
-      width: 100%; /* Make paragraph take full width */
-      margin-left: 0; /* Reset left margin */
+  .content-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
 
-    }
-  
+  .video,
+  .portfolio-image {
+    width: 100%;
+    max-width: 550px;
   }
-  
-  /* Media Queries for Small Devices */
-  @media screen and (max-width: 600px) {
-    .portfolio_container {
-      grid-template-columns: 1fr;
-      gap: 1rem;
-    }
-  
-    .content-wrapper {
-      margin-top: 20px; /* Adjust spacing */
-    }
-  
-    .video-1,
-    .video-2,
-    .text-block-1 {
-      width: 100%; /* Make both video and text take full width */
-      margin-left: 0; /* Reset left margin */
-    }
+
+  .text-block {
+    text-align: center;
   }
+
+  .text-block p {
+    text-align: left;
+  }
+
+  .project-links {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #portfolio {
+    padding: 4rem 1.5rem;
+  }
+
+  .portfolio_item {
+    padding: 2rem 1.5rem;
+  }
+
+  .text-block p {
+    font-size: 0.95rem;
+  }
+
+  .project-title {
+    font-size: 1.2rem;
+  }
+
+  .pf-btn,
+  .pf-btn-secondary {
+    padding: 0.75rem 1.4rem;
+    font-size: 0.95rem;
+  }
+}

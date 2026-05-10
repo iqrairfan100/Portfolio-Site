@@ -15,14 +15,16 @@
 
 :root {
     --color-bg: linear-gradient(#eadee5);
-    --color-primary: rgba(247, 228, 240, 0.771);
-    --color-primary-variant:#edb5e18d;
+    --color-primary: rgba(228, 233, 247, 0.771);
+    --color-primary-variant:rgb(164, 167, 238);
     --color-white: rgb(248, 241, 241);
-    --color-light: rgba(187, 30, 56, 0.692);
+    --color-light: #ededf8;
     --color-text: #000000;
     --color-header: #fbebf2;
+    --color-footer:rgb(49, 124, 177);
 
     --transition: all 400ms ease;
+
 
     --containter-width-lg: 75%;
     --container-width-md: 86%;
@@ -41,9 +43,20 @@ body {
     font-family: 'Raleway', sans-serif;
     line-height:1.7;
     background-size: 100%;
-  background-color: #b4b3f4;
-   background-image: linear-gradient(326deg,#fbc5d3, #b4b3f4, #fbc7d4);
- 
+    background-color: #b1ade2;
+    background-image: linear-gradient(315deg, #4f87b6 0%, #b1ade2 120%);
+
+
+
+
+
+
+
+
+
+
+
+
   
     
     

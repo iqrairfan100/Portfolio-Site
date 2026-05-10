@@ -1,86 +1,163 @@
+/* ========== SECTION BASE ========== */
+#contact {
+  position: relative;
+  padding: 6rem 0;
+  background: none;
+  overflow: hidden;
+  text-align: center;
+}
+
+.contact-header h4 {
+  color: #e8eaf6;
+  font-weight: 500;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.contact-header h2 {
+  color: #ffffff;
+  font-size: 2.2rem;
+  margin-top: 0.5rem;
+}
+
+/* ========== CONTAINER ========== */
 .container.contact_container {
-    width: 15%;
-    justify-content: center;
-    padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-
-
+/* ========== CONTACT INFO CARD ========== */
 .contact_option {
-    background: transparent;
-    padding: 1.2rem;
-    border-radius: 1.2rem;
-    border: 1px solid transparent;
-    transition: var(--transition);
-    text-align: center;
-    justify-content: center;
-    display: block;
-    width: 100%; 
-    position: relative;
-
-}
-
-.contact_option:hover {
-    border-color: transparent;
-    cursor: default;
-    background: rgba(247, 228, 240, 0.771);   
-
-
+  background: transparent;
+  padding: 1.2rem;
+  text-align: center;
+  transition: all 0.3s ease;
 }
 
 .contact_option-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-    
-
+  font-size: 1.8rem;
+  margin-bottom: 0.6rem;
+  color: #ffffff;
 }
 
-.contact_option a{
-    margin-top: 0.7rem;
-    display: inline-block;
-    font-size: 0.8rem;
-    text-align: center;
-    justify-content: center;
-
-
+.contact_email {
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 1.05rem;
+  letter-spacing: 0.3px;
 }
 
-
-form{
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    color: #000000;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
-    align-items: center;
-
-    
+/* ========== FORM ========== */
+.contact_form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+  width: 100%;
+  max-width: 600px;
 }
 
-input, textarea{
-    width: 50rem;
-    padding: 1.5rem;
-    border-radius: 0.5rem;
-    background: transparent;
-    border: 2px solid var(--color-white);
-    resize: none;
-    background:  rgba(248, 241, 241);
+input,
+textarea {
+  width: 100%;
+  padding: 1.2rem 1.5rem;
+  border-radius: 0.6rem;
+  border: 2px solid rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.85);
+  color: #1a1a1a;
+  font-size: 1rem;
+  transition: all 0.3s ease;
 }
 
-/*media queries medium */
-@media screen and (max-width:1024px) {
-    .container.contact_container {
-        grid-template-columns: 1fr;
-        gap: 2rem;
-    }
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #6daed6;
+  box-shadow: 0 0 10px rgba(111, 167, 208, 0.3);
 }
 
-/*media small */
+/* ========== PORTFOLIO-STYLE BUTTON ========== */
+.contact-btn {
+  display: inline-block;
+  background: linear-gradient(135deg, #6daed6 0%, #9fa9d8 100%);
+  color: #ffffff;
+  padding: 0.85rem 2.2rem;
+  border-radius: 10px;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  border: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 12px rgba(111, 167, 208, 0.4),
+              inset 0 0 4px rgba(255, 255, 255, 0.25);
+  cursor: pointer;
+  text-decoration: none !important;
+}
 
-@media screen and (max-width: 600px)  {
-    .container.contact_container{
-        width: var(--container-width-sm);
-    }
+.contact-btn:hover {
+  background: linear-gradient(135deg, #4f87b6 0%, #a79fdd 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px rgba(111, 167, 208, 0.55),
+              inset 0 0 6px rgba(255, 255, 255, 0.3);
+}
+
+/* ========== STATUS MESSAGE ========== */
+.status-message {
+  margin-top: 1rem;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #f0f0f0;
+  background: rgba(79, 135, 182, 0.25);
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== RESPONSIVE ========== */
+@media screen and (max-width: 1024px) {
+  .container.contact_container {
+    gap: 1.8rem;
+    max-width: 550px;
+  }
+
+  .contact_form {
+    max-width: 500px;
+  }
+
+  .contact_email {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact {
+    padding: 4rem 1.5rem;
+  }
+
+  input,
+  textarea {
+    padding: 1rem;
+    font-size: 0.95rem;
+  }
+
+  .contact-btn {
+    padding: 0.75rem 1.8rem;
+    font-size: 0.95rem;
+  }
 }

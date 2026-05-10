@@ -8,12 +8,12 @@ import {useState} from 'react'
 import {RiLightbulbLine} from'react-icons/ri'
 
 const Nav = () => {
-  const {activeNav, setActiveNav} = useState('#')
+  const [activeNav, setActiveNav] = useState('#')
   return (
     <nav>
-      <a href="#" className={activeNav=== "#" ? 'active' : ''}><RiHomeHeartLine/></a>
+      <a href="#" onClick={() => setActiveNav('#')} className={activeNav=== "#" ? 'active' : ''}><RiHomeHeartLine/></a>
       <a href="#about" onClick={()=> setActiveNav ('#about')} className={activeNav === '#about' ? 'active' : ''}><FaCat/></a>
-      <a href="#experience" onClick={()=> setActiveNav ('#experience')} className={activeNav == '#experience' ? 'active' :''}><RiLightbulbLine/></a>
+      <a href="#experience" onClick={()=> setActiveNav ('#experience')} className={activeNav === '#experience' ? 'active' :''}><RiLightbulbLine/></a>
       <a href="#portfolio" onClick={()=> setActiveNav ('#portfolio')} className={activeNav === '#portfolio' ? 'active' : ''}><BiBookHeart/></a>
       <a href="#contact" onClick={()=> setActiveNav ('#contact')} className={activeNav === '#contact' ? 'active' : ''}><MdOutlineMessage/></a>
     </nav>

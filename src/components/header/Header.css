@@ -1,214 +1,199 @@
-header{
-    height: 100vh;
-    padding-top: 4rem;
-    overflow: hidden;
+/* ========== HEADER BASE ========== */
+header {
+  height: 100vh;
+  padding-top: 4rem;
+  overflow: hidden;
 }
 
 .header_container {
-    text-align: center;
-    height: 100%;
-    position: relative;
-    
+  text-align: center;
+  height: 100%;
+  position: relative;
 }
 
+/* ========== PROFILE IMAGE ========== */
 .me {
-    position: absolute;
-    left: 50%;
-    top: 65%;
-    transform: translate(-50%, -50%); 
-    height: 12vw;
- 
+  position: absolute;
+  left: 50%;
+  top: 65%;
+  transform: translate(-50%, -50%);
+  height: 8vw;
 }
-/* CTA BUTTON */
-.cta{
-    margin-top: 1.6rem;
-    display: flex;
-    gap: 1.2rem;
-    justify-content: center;
-
-}
-
-
-
-/* socials */
-.header_socials {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.8rem;
-    position: absolute;
-    left: 1.3rem;
-    bottom: 2rem;
-    font-size: 25px;
-    
-    
-
-}
-.header_socials a {
-    color: white;
-
-}
-.header_socials a:hover {
-    color: rgba(187, 30, 56, 0.692);
-
-}
-/* image adjusting in ME */
 
 .me-image {
-    width: 17vw; 
-    height: 17vw; 
-  }
-  
+  width: 7vw;
+  height: 7vw;
+  border-radius: 50%;
+  transform: scale(3);
+  box-shadow: 0 0 35px rgba(72, 88, 130, 0.35);
+}
 
-/*scroll down link position */
+/* ========== CTA BUTTONS ========== */
+.cta {
+  margin-top: 1.6rem;
+  display: flex;
+  gap: 1.2rem;
+  justify-content: center;
+}
 
+/* ========== SOCIAL ICONS LEFT ========== */
+.header_socials {
+  position: fixed;
+  left: 1.5rem; /* ✅ margin from left edge */
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  z-index: 10;
+}
+
+.header_socials a {
+  color: #f0f4ff; /* lighter for visibility */
+  font-size: 1.9rem;
+  transition: all 0.3s ease;
+}
+
+.header_socials a:hover {
+  color: #5a6fc2; /* darker hover color */
+  transform: translateY(-3px);
+  text-shadow: 0 0 10px rgba(90, 111, 194, 0.6);
+}
+
+/* ========== SCROLL DOWN RIGHT ========== */
 .scroll_down {
-    position: absolute;
-    right: -1.3rem;
-    bottom: 5rem;
-    transform: rotate(90deg);
-    font-weight: 300;
-    font-size: 22px;
-    color: white;
+  position: fixed;
+  right: 0; /* stays at screen edge */
+  bottom: 3rem;
+  transform: rotate(90deg);
+  font-weight: 400;
+  font-size: 1.05rem;
+  color: #f0f4ff;
+  letter-spacing: 0.7px;
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+  margin-right: -0.8rem; /* ✅ pulls closer to right edge */
 }
+
 .scroll_down:hover {
-   color: rgba(187, 30, 56, 0.692);
+  color: #5a6fc2;
+  transform: rotate(90deg) translateY(-4px);
+  text-shadow: 0 0 8px rgba(90, 111, 194, 0.5);
 }
 
-/* Binary animation */
+/* ========== ROTATING TEXT CIRCLE ========== */
 .circle {
-    position: relative;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.text{
-    position: absolute;
-    width: 100% ;
-    height: 100%;
-    animation: rotateText 10s linear infinite;
-    color: white;
-    transform-origin: center;
-
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@keyframes rotateText
-{
-    0%
-    {
-        transform: rotate(360deg);
-    }
-    100% {
-        transform: rotate(0deg);
-    }
+.text {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  animation: rotateText 10s linear infinite;
+  color: white;
+  transform-origin: center;
 }
 
+@keyframes rotateText {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/* Background glow circle */
 .white-circle {
-    position: absolute;
-    width: 170%; /* Adjust the size as needed */
-    height: 170%; /* Adjust the size as needed */
-    background-color: #fff3fb;
-    border-radius: 50%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-  }
-.text span {
-    position: absolute;
-    font-size: 2.3rem;
-    transform-origin: 0 100px;
-    width: 350px;
-  pointer-events: none;
-    
+  position: absolute;
+  width: 170%;
+  height: 170%;
+  background: radial-gradient(circle at center, #edf1ff 0%, rgba(255, 255, 255, 0.4) 100%);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  filter: blur(2px);
 }
 
+.text span {
+  position: absolute;
+  font-size: 2.3rem;
+  transform-origin: 0 100px;
+  width: 350px;
+  pointer-events: none;
+}
+
+/* ========== RESPONSIVE (TABLET) ========== */
 @media screen and (max-width: 1024px) {
-    header {
-      height: 55vh;
-    }
-  
-    .me {
-      position: relative;
-      left: 48%;
-      top: 50%;
-      width: 200px; 
-      height: 500px; 
-
-    }
-
-    .me-image {
-        width: 40vw; 
-        height: 40vw; 
-      }
-      
-    .text span {
-        position: absolute;
-        font-size: 3rem;
-        transform-origin: 0 100px;
-        width: 48vw;
-        pointer-events: none;
-
-    }
-
-    .cta{
-        margin-top: 1.6rem;
-        display: flex;
-        gap: 1.2rem;
-        justify-content: center;
-        font-size: 25px;
-     
-    }
-
-    .white-circle {
-        position: absolute;
-        width: 225%; 
-        height: 225%; 
-        background-color: #fff3fb;
-        border-radius: 50%;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        z-index: -1;
-      }
-
-    .header_socials {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 0.8rem;
-        position: absolute;
-        left: 0.2rem;
-        bottom: 2rem;
-        font-size: 37px;
-    
-    
-    }
-    .scroll_down {
-        position: absolute;
-        right: -5rem;
-        bottom: 5rem;
-        transform: rotate(90deg);
-        font-weight: 300;
-        font-size: 30px;
-        color: white;
-    }
-      
-    .header_content{
-        font-size: 20px;
-    }
+  header {
+    height: 55vh;
   }
-  
-  /* for smaller devices */
-  @media screen and (max-width: 600px) {
-    .me {
-      position: relative;
-      width: 100%;
-      height: 100%;
-     
-    }
-  
+
+  .me {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    width: 200px;
+    height: 500px;
   }
+
+  .me-image {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  .cta {
+    font-size: 25px;
+  }
+
+  .white-circle {
+    width: 225%;
+    height: 225%;
+  }
+
+  .header_socials {
+    left: 1rem;
+    bottom: 1.5rem;
+    font-size: 2.3rem;
+  }
+
+  .scroll_down {
+    right: 0;
+    bottom: 2.5rem;
+    font-size: 0.95rem;
+    margin-right: -0.6rem; /* smaller offset on tablets */
+  }
+}
+
+/* ========== RESPONSIVE (MOBILE) ========== */
+@media screen and (max-width: 600px) {
+  .me {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+
+  .white-circle {
+    width: 250%;
+    height: 250%;
+  }
+
+  .header_socials {
+    left: 1rem;
+    bottom: 1rem;
+    gap: 0.8rem;
+  }
+
+  .scroll_down {
+    display: none; /* hide on mobile */
+  }
+}
