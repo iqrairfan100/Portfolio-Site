@@ -17,12 +17,12 @@ header {
   left: 50%;
   top: 65%;
   transform: translate(-50%, -50%);
-  height: 8vw;
+  height: 10vw;
 }
 
-  .me-image {
-    width: 300px;
-    height: 300px;
+.me-image {
+    width: 320px;
+    height: 320px;
     transform: none;
     object-fit: cover;
     border-radius: 50%;
@@ -84,8 +84,8 @@ header {
 /* ========== ROTATING TEXT CIRCLE ========== */
 .circle {
   position: relative;
-  width: 190px;
-  height: 190px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -128,7 +128,7 @@ header {
   position: absolute;
   font-size: 2.3rem;
   transform-origin: 0 100px;
-  width: 330px;
+  width: 350px;
   pointer-events: none;
 }
 
