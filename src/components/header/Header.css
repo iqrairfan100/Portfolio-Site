@@ -20,13 +20,13 @@ header {
   height: 8vw;
 }
 
-.me-image {
-  width: 7vw;
-  height: 7vw;
-  border-radius: 50%;
-  transform: scale(3);
-  box-shadow: 0 0 35px rgba(72, 88, 130, 0.35);
-}
+  .me-image {
+    width: 300px;
+    height: 300px;
+    transform: none;
+    object-fit: cover;
+    border-radius: 50%;
+  }
 
 /* ========== CTA BUTTONS ========== */
 .cta {
@@ -84,8 +84,8 @@ header {
 /* ========== ROTATING TEXT CIRCLE ========== */
 .circle {
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 190px;
+  height: 190px;
   border-radius: 50%;
   display: flex;
   justify-content: center;
@@ -128,10 +128,18 @@ header {
   position: absolute;
   font-size: 2.3rem;
   transform-origin: 0 100px;
-  width: 350px;
+  width: 330px;
   pointer-events: none;
 }
 
+.header_content h2.text-light {
+    font-size: 1.60rem;
+    line-height: 1.25;
+  }
+
+.header_content h1 {
+    font-size: 2.7rem;
+  }
 /* ========== RESPONSIVE (TABLET) ========== */
 @media screen and (max-width: 1024px) {
   header {

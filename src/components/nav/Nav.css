@@ -48,9 +48,10 @@ nav a.active {
 /* ===== MOBILE/TABLET ADJUSTMENTS ===== */
 @media screen and (max-width: 1024px) {
   nav {
-    padding: 1.5rem 2.5rem;
-    gap: 1rem;
-    box-shadow: 0 4px 25px rgba(79, 135, 182, 0.2);
+    bottom: 1rem;
+    padding: 0.55rem 1rem;
+    gap: 0.35rem;
+    border-radius: 2rem;
   }
 
   nav a {
