@@ -22,7 +22,7 @@ const Header = () => {
         <div className="header_content">
           <h2>Hey! Welcome to my Portfolio Site, I'm</h2>
           <h1>Iqra Irfan</h1>
-          <h2 className="text-light">Full Stack Software and A.I. Engineer</h2>
+          <h2 className="text-light">Full Stack Software and Data Engineer</h2>
         </div>
 
         <CTA />
